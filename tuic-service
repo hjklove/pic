@@ -1,0 +1,15 @@
+[Unit]
+Description=Delicately-TUICed high-performance proxy built on top of the QUIC protocol
+Documentation=https://github.com/EAimTY/tuic
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/tuic
+ExecStart=/opt/tuic/tuic-server-0.8.1-x86_64-linux-gnu -c config.json
+Restart=on-failure
+RestartPreventExitStatus=1
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
