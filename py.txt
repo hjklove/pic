@@ -1,0 +1,9 @@
+{
+    "port": 443,
+    "token": ["as1145141919810"],
+    "certificate": "/opt/tuic/1tbdev.crt",
+    "private_key": "/opt/tuic/1tbdev.key",
+    "ip": "0.0.0.0",
+    "congestion_controller": "bbr",
+    "alpn": ["h3"]
+}
